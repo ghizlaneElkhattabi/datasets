@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<experiments type="DisCSP" benchmark="ComplexDisCSP">
+  <instances benchmark="ComplexDisCSP" type="DisCSP" nbAgents="5" domainSize="5" name="ComplexDisCSP_5_6_5_">
+    <density name="p1_10" p1="10">
+      <interAgentsDensity From="20" To="100" Step="10">
+        <connectionDensity From="6" To="6" Step="6">
+          <tightness From="20" To="70" Step="50" />
+        </connectionDensity>
+      </interAgentsDensity>
+    </density>
+    <density name="p1_20" p1="20">
+      <interAgentsDensity From="20" To="100" Step="10">
+        <connectionDensity From="6" To="6" Step="6">
+          <tightness From="20" To="70" Step="50" />
+        </connectionDensity>
+      </interAgentsDensity>
+    </density>
+    <density name="p1_30" p1="30">
+      <interAgentsDensity From="20" To="100" Step="10">
+        <connectionDensity From="6" To="6" Step="6">
+          <tightness From="20" To="70" Step="50" />
+        </connectionDensity>
+      </interAgentsDensity>
+    </density>
+    <density name="p1_40" p1="40">
+      <interAgentsDensity From="20" To="100" Step="10">
+        <connectionDensity From="6" To="6" Step="6">
+          <tightness From="20" To="70" Step="50" />
+        </connectionDensity>
+      </interAgentsDensity>
+    </density>
+    <density name="p1_50" p1="50">
+      <interAgentsDensity From="20" To="100" Step="10">
+        <connectionDensity From="6" To="6" Step="6">
+          <tightness From="20" To="70" Step="50" />
+        </connectionDensity>
+      </interAgentsDensity>
+    </density>
+    <density name="p1_60" p1="60">
+      <interAgentsDensity From="20" To="100" Step="10">
+        <connectionDensity From="6" To="6" Step="6">
+          <tightness From="20" To="70" Step="50" />
+        </connectionDensity>
+      </interAgentsDensity>
+    </density>
+    <density name="p1_70" p1="70">
+      <interAgentsDensity From="20" To="100" Step="10">
+        <connectionDensity From="6" To="6" Step="6">
+          <tightness From="20" To="70" Step="50" />
+        </connectionDensity>
+      </interAgentsDensity>
+    </density>
+  </instances>
+</experiments>

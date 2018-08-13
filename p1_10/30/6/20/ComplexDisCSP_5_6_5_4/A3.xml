@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<instance>
+<presentation name="MSP" type="DisCSP" model="Complex" constraintModel="TKC" format="XDisCSP 1.0" />
+<domains nbDomains="1">
+<domain name="D1" nbValues="5">1..5</domain>
+</domains>
+<variables nbVariables="6">
+<variable name="X3.1" id="1" domain="D1" description="M_1" />
+<variable name="X3.2" id="1" domain="D1" description="M_1" />
+<variable name="X3.3" id="1" domain="D1" description="M_1" />
+<variable name="X3.4" id="1" domain="D1" description="M_1" />
+<variable name="X3.5" id="1" domain="D1" description="M_1" />
+<variable name="X3.6" id="1" domain="D1" description="M_1" />
+</variables>
+<predicates nbPredicates="0">
+</predicates>
+<constraints>
+<constraint name="C1" model="TKC" arity="2" scope="X3.3 X3.5" reference="R6" />
+</constraints>
+<agents_neighbours>
+<agents_parent>
+</agents_parent>
+<agents_children>
+</agents_children>
+</agents_neighbours>
+<relations>
+<relation name="R6" semantics="conflicts">4 1|3 5|3 4|1 1|4 2</relation>
+</relations>
+</instance>

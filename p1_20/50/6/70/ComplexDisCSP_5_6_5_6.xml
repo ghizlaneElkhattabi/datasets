@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<instance>
+  <presentation name="instance6" type="DisCSP" benchmark="ComplexDisCSP" model="Complex" constraintModel="TKC" format="XDisCSP 1.0" />
+  <agents nbAgents="5">
+    <agent name="A1" id="1" description="agent 1" />
+    <agent name="A2" id="2" description="agent 2" />
+    <agent name="A3" id="3" description="agent 3" />
+    <agent name="A4" id="4" description="agent 4" />
+    <agent name="A5" id="5" description="agent 5" />
+  </agents>
+  <domains nbDomains="1">
+    <domain name="D1" nbValues="5">1..5</domain>
+  </domains>
+  <variables nbVariables="30">
+    <variable agent="A1" name="X1.1" id="1" domain="D1" description="variable 1.1" />
+    <variable agent="A1" name="X1.2" id="2" domain="D1" description="variable 1.2" />
+    <variable agent="A1" name="X1.3" id="3" domain="D1" description="variable 1.3" />
+    <variable agent="A1" name="X1.4" id="4" domain="D1" description="variable 1.4" />
+    <variable agent="A1" name="X1.5" id="5" domain="D1" description="variable 1.5" />
+    <variable agent="A1" name="X1.6" id="6" domain="D1" description="variable 1.6" />
+    <variable agent="A2" name="X2.1" id="1" domain="D1" description="variable 2.1" />
+    <variable agent="A2" name="X2.2" id="2" domain="D1" description="variable 2.2" />
+    <variable agent="A2" name="X2.3" id="3" domain="D1" description="variable 2.3" />
+    <variable agent="A2" name="X2.4" id="4" domain="D1" description="variable 2.4" />
+    <variable agent="A2" name="X2.5" id="5" domain="D1" description="variable 2.5" />
+    <variable agent="A2" name="X2.6" id="6" domain="D1" description="variable 2.6" />
+    <variable agent="A3" name="X3.1" id="1" domain="D1" description="variable 3.1" />
+    <variable agent="A3" name="X3.2" id="2" domain="D1" description="variable 3.2" />
+    <variable agent="A3" name="X3.3" id="3" domain="D1" description="variable 3.3" />
+    <variable agent="A3" name="X3.4" id="4" domain="D1" description="variable 3.4" />
+    <variable agent="A3" name="X3.5" id="5" domain="D1" description="variable 3.5" />
+    <variable agent="A3" name="X3.6" id="6" domain="D1" description="variable 3.6" />
+    <variable agent="A4" name="X4.1" id="1" domain="D1" description="variable 4.1" />
+    <variable agent="A4" name="X4.2" id="2" domain="D1" description="variable 4.2" />
+    <variable agent="A4" name="X4.3" id="3" domain="D1" description="variable 4.3" />
+    <variable agent="A4" name="X4.4" id="4" domain="D1" description="variable 4.4" />
+    <variable agent="A4" name="X4.5" id="5" domain="D1" description="variable 4.5" />
+    <variable agent="A4" name="X4.6" id="6" domain="D1" description="variable 4.6" />
+    <variable agent="A5" name="X5.1" id="1" domain="D1" description="variable 5.1" />
+    <variable agent="A5" name="X5.2" id="2" domain="D1" description="variable 5.2" />
+    <variable agent="A5" name="X5.3" id="3" domain="D1" description="variable 5.3" />
+    <variable agent="A5" name="X5.4" id="4" domain="D1" description="variable 5.4" />
+    <variable agent="A5" name="X5.5" id="5" domain="D1" description="variable 5.5" />
+    <variable agent="A5" name="X5.6" id="6" domain="D1" description="variable 5.6" />
+  </variables>
+  <constraints nbConstraints="25">
+    <constraint name="C0" model="TKC" arity="2" scope="X1.1 X4.2" reference="R0" />
+    <constraint name="C1" model="TKC" arity="2" scope="X1.2 X1.6" reference="R1" />
+    <constraint name="C2" model="TKC" arity="2" scope="X1.3 X4.6" reference="R2" />
+    <constraint name="C3" model="TKC" arity="2" scope="X1.4 X1.6" reference="R3" />
+    <constraint name="C4" model="TKC" arity="2" scope="X1.4 X3.6" reference="R4" />
+    <constraint name="C5" model="TKC" arity="2" scope="X1.5 X1.6" reference="R5" />
+    <constraint name="C6" model="TKC" arity="2" scope="X1.5 X3.2" reference="R6" />
+    <constraint name="C7" model="TKC" arity="2" scope="X2.1 X2.3" reference="R7" />
+    <constraint name="C8" model="TKC" arity="2" scope="X2.2 X3.2" reference="R8" />
+    <constraint name="C9" model="TKC" arity="2" scope="X2.2 X2.5" reference="R9" />
+    <constraint name="C10" model="TKC" arity="2" scope="X2.3 X2.5" reference="R10" />
+    <constraint name="C11" model="TKC" arity="2" scope="X2.4 X4.3" reference="R11" />
+    <constraint name="C12" model="TKC" arity="2" scope="X2.4 X5.5" reference="R12" />
+    <constraint name="C13" model="TKC" arity="2" scope="X2.4 X4.1" reference="R13" />
+    <constraint name="C14" model="TKC" arity="2" scope="X2.4 X3.3" reference="R14" />
+    <constraint name="C15" model="TKC" arity="2" scope="X2.6 X5.4" reference="R15" />
+    <constraint name="C16" model="TKC" arity="2" scope="X3.2 X3.6" reference="R16" />
+    <constraint name="C17" model="TKC" arity="2" scope="X3.2 X3.4" reference="R17" />
+    <constraint name="C18" model="TKC" arity="2" scope="X3.3 X3.5" reference="R18" />
+    <constraint name="C19" model="TKC" arity="2" scope="X4.1 X4.5" reference="R19" />
+    <constraint name="C20" model="TKC" arity="2" scope="X4.3 X4.4" reference="R20" />
+    <constraint name="C21" model="TKC" arity="2" scope="X4.4 X4.5" reference="R21" />
+    <constraint name="C22" model="TKC" arity="2" scope="X5.1 X5.2" reference="R22" />
+    <constraint name="C23" model="TKC" arity="2" scope="X5.2 X5.6" reference="R23" />
+    <constraint name="C24" model="TKC" arity="2" scope="X5.3 X5.4" reference="R24" />
+  </constraints>
+  <relations nbRelations="25">
+    <relation name="R0" arity="2" nbTuples="17" semantics="conflicts">2 3|5 4|3 4|2 4|5 2|1 5|2 5|1 2|2 1|4 3|5 5|4 2|1 4|2 2|1 3|3 2|5 3</relation>
+    <relation name="R1" arity="2" nbTuples="17" semantics="conflicts">4 1|3 1|2 5|3 3|4 5|4 3|2 4|2 1|2 3|5 1|1 2|2 2|1 3|3 2|3 5|4 4|1 1</relation>
+    <relation name="R2" arity="2" nbTuples="17" semantics="conflicts">5 1|1 1|4 1|2 4|1 3|5 2|4 5|4 4|4 2|3 2|2 5|3 3|5 5|1 2|5 4|1 4|2 2</relation>
+    <relation name="R3" arity="2" nbTuples="17" semantics="conflicts">4 5|2 4|1 3|5 2|3 2|2 5|3 1|5 3|5 5|2 2|5 4|5 1|3 3|2 1|1 1|4 4|2 3</relation>
+    <relation name="R4" arity="2" nbTuples="17" semantics="conflicts">1 5|1 2|2 2|5 1|3 2|2 1|4 5|4 3|2 3|1 1|3 1|1 3|5 3|5 2|2 5|3 5|3 4</relation>
+    <relation name="R5" arity="2" nbTuples="17" semantics="conflicts">5 2|3 1|2 5|1 5|3 4|3 5|3 2|1 4|4 3|4 1|5 5|2 1|1 1|1 2|5 3|4 5|2 3</relation>
+    <relation name="R6" arity="2" nbTuples="17" semantics="conflicts">2 4|2 3|4 1|3 4|1 2|1 1|1 5|3 2|1 3|2 2|5 3|4 4|2 1|5 1|5 2|3 3|3 5</relation>
+    <relation name="R7" arity="2" nbTuples="17" semantics="conflicts">5 2|3 3|2 3|4 3|1 5|2 2|4 2|1 4|3 1|4 1|2 1|3 5|2 5|5 4|5 1|5 3|3 4</relation>
+    <relation name="R8" arity="2" nbTuples="17" semantics="conflicts">5 2|4 4|5 4|2 2|3 4|5 5|2 1|4 1|3 3|5 3|1 4|1 1|1 5|4 5|5 1|1 2|2 3</relation>
+    <relation name="R9" arity="2" nbTuples="17" semantics="conflicts">1 2|5 1|1 5|1 3|1 1|3 5|2 3|5 2|2 4|4 1|3 3|4 3|3 2|2 5|5 4|1 4|3 1</relation>
+    <relation name="R10" arity="2" nbTuples="17" semantics="conflicts">5 2|1 3|4 2|4 5|1 4|2 2|3 1|3 4|2 3|3 2|4 1|2 5|5 3|2 1|1 5|1 1|3 5</relation>
+    <relation name="R11" arity="2" nbTuples="17" semantics="conflicts">5 4|3 3|4 1|1 4|4 4|3 2|5 5|2 3|4 3|2 4|4 5|3 4|2 5|3 1|1 1|4 2|2 1</relation>
+    <relation name="R12" arity="2" nbTuples="17" semantics="conflicts">1 3|4 4|3 5|1 2|3 4|4 1|2 3|5 3|5 1|5 2|5 4|2 1|2 5|2 4|2 2|1 1|1 5</relation>
+    <relation name="R13" arity="2" nbTuples="17" semantics="conflicts">3 3|3 1|1 3|1 1|4 5|2 3|2 2|4 4|4 2|5 2|2 1|3 5|2 5|4 1|1 2|3 2|5 4</relation>
+    <relation name="R14" arity="2" nbTuples="17" semantics="conflicts">1 3|3 1|4 2|2 2|5 3|1 4|2 5|1 5|3 3|1 2|4 4|2 4|5 4|4 5|2 1|1 1|5 5</relation>
+    <relation name="R15" arity="2" nbTuples="17" semantics="conflicts">4 5|5 3|3 3|2 4|4 2|5 4|4 3|1 1|1 2|5 1|1 3|1 4|3 4|1 5|5 5|3 1|2 5</relation>
+    <relation name="R16" arity="2" nbTuples="17" semantics="conflicts">4 5|5 1|2 3|1 5|1 4|5 3|1 1|2 1|1 2|4 1|2 5|2 2|3 3|5 4|2 4|3 1|4 4</relation>
+    <relation name="R17" arity="2" nbTuples="17" semantics="conflicts">2 3|1 2|5 3|3 2|4 4|5 5|2 5|3 1|4 3|4 1|2 1|1 4|5 2|1 3|4 5|4 2|5 1</relation>
+    <relation name="R18" arity="2" nbTuples="17" semantics="conflicts">2 3|5 2|5 5|3 1|1 1|2 5|1 2|1 3|4 3|2 4|4 5|4 2|5 4|4 4|3 4|3 3|4 1</relation>
+    <relation name="R19" arity="2" nbTuples="17" semantics="conflicts">3 2|1 2|2 2|4 1|4 2|2 4|2 3|4 5|1 4|3 3|3 5|5 4|5 5|3 4|5 1|4 4|5 2</relation>
+    <relation name="R20" arity="2" nbTuples="17" semantics="conflicts">3 1|1 5|1 3|4 2|2 2|2 5|4 4|4 5|5 1|3 4|5 3|4 3|1 4|2 3|2 1|2 4|1 2</relation>
+    <relation name="R21" arity="2" nbTuples="17" semantics="conflicts">4 1|5 2|1 4|3 3|2 1|4 5|2 3|1 1|3 5|3 4|5 3|4 3|4 2|3 2|1 3|5 5|5 4</relation>
+    <relation name="R22" arity="2" nbTuples="17" semantics="conflicts">2 4|3 3|4 5|2 1|5 2|1 2|5 4|3 1|1 4|5 5|5 1|1 1|3 5|4 3|4 2|3 4|4 1</relation>
+    <relation name="R23" arity="2" nbTuples="17" semantics="conflicts">1 5|4 4|3 3|1 1|3 1|1 4|2 3|5 2|2 5|3 2|2 1|5 3|2 4|5 1|2 2|4 5|5 5</relation>
+    <relation name="R24" arity="2" nbTuples="17" semantics="conflicts">5 1|2 1|5 5|2 4|3 2|4 5|5 3|4 4|2 5|1 5|5 4|2 2|3 4|1 3|3 3|4 1|1 2</relation>
+  </relations>
+  <GuiPresentation name="instance7" type="DisCSP" model="Complex" benchmark="ComplexDisCSP" nbAgents="5" domainSize="5" density="20" tightness="70" nbConstraints="25" nbTuples="17" />
+</instance>

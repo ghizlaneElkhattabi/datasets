@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<instance>
+<presentation name="MSP" type="DisCSP" model="Complex" constraintModel="TKC" format="XDisCSP 1.0" />
+<domains nbDomains="1">
+<domain name="D1" nbValues="5">1..5</domain>
+</domains>
+<variables nbVariables="6">
+<variable name="X5.1" id="1" domain="D1" description="M_1" />
+<variable name="X5.2" id="1" domain="D1" description="M_1" />
+<variable name="X5.3" id="1" domain="D1" description="M_1" />
+<variable name="X5.4" id="1" domain="D1" description="M_1" />
+<variable name="X5.5" id="1" domain="D1" description="M_1" />
+<variable name="X5.6" id="1" domain="D1" description="M_1" />
+</variables>
+<predicates nbPredicates="0">
+</predicates>
+<constraints>
+<constraint name="C1" model="TKC" arity="2" scope="X5.1 X5.6" reference="R42" />
+<constraint name="C2" model="TKC" arity="2" scope="X5.1 X5.4" reference="R43" />
+<constraint name="C3" model="TKC" arity="2" scope="X5.2 X5.4" reference="R44" />
+<constraint name="C4" model="TKC" arity="2" scope="X5.3 X5.6" reference="R45" />
+<constraint name="C5" model="TKC" arity="2" scope="X5.3 X5.4" reference="R46" />
+<constraint name="C6" model="TKC" arity="2" scope="X5.4 X5.6" reference="R47" />
+<constraint name="C7" model="TKC" arity="2" scope="X5.5 X5.6" reference="R48" />
+</constraints>
+<agents_neighbours>
+<agents_parent>
+<agent name = "A1">
+<constraints nbConstraints="2">
+<constraint model="TKC" name="C1" reference="R4" scope="X1.1 X5.6" arity="2">
+<parameters>X1.1 X5.6</parameters>
+</constraint>
+<constraint model="TKC" name="C2" reference="R11" scope="X1.4 X5.1" arity="2">
+<parameters>X1.4 X5.1</parameters>
+</constraint>
+</constraints>
+</agent>
+<agent name = "A4">
+<constraints nbConstraints="2">
+<constraint model="TKC" name="C1" reference="R33" scope="X4.1 X5.1" arity="2">
+<parameters>X4.1 X5.1</parameters>
+</constraint>
+<constraint model="TKC" name="C2" reference="R34" scope="X4.1 X5.5" arity="2">
+<parameters>X4.1 X5.5</parameters>
+</constraint>
+</constraints>
+</agent>
+</agents_parent>
+<agents_children>
+</agents_children>
+</agents_neighbours>
+<relations>
+<relation name="R42" semantics="conflicts">4 3|2 3|4 1|5 3|3 3</relation>
+<relation name="R43" semantics="conflicts">3 2|3 1|1 1|2 4|2 3</relation>
+<relation name="R44" semantics="conflicts">4 1|4 5|2 1|2 3|5 2</relation>
+<relation name="R45" semantics="conflicts">2 3|5 4|4 2|1 2|3 4</relation>
+<relation name="R46" semantics="conflicts">3 2|5 1|1 1|4 3|2 4</relation>
+<relation name="R47" semantics="conflicts">4 2|2 3|3 3|5 3|1 1</relation>
+<relation name="R48" semantics="conflicts">4 2|5 1|1 5|3 4|4 1</relation>
+<relation name="R4" semantics="conflicts">4 1|2 4|5 3|1 4|2 2</relation>
+<relation name="R11" semantics="conflicts">4 4|2 4|5 2|3 1|4 5</relation>
+<relation name="R33" semantics="conflicts">3 2|5 3|4 3|2 2|3 1</relation>
+<relation name="R34" semantics="conflicts">1 5|2 1|4 1|4 2|2 5</relation>
+</relations>
+</instance>

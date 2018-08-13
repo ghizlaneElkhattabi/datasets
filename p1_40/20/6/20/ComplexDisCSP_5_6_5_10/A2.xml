@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<instance>
+<presentation name="MSP" type="DisCSP" model="Complex" constraintModel="TKC" format="XDisCSP 1.0" />
+<domains nbDomains="1">
+<domain name="D1" nbValues="5">1..5</domain>
+</domains>
+<variables nbVariables="6">
+<variable name="X2.1" id="1" domain="D1" description="M_1" />
+<variable name="X2.2" id="1" domain="D1" description="M_1" />
+<variable name="X2.3" id="1" domain="D1" description="M_1" />
+<variable name="X2.4" id="1" domain="D1" description="M_1" />
+<variable name="X2.5" id="1" domain="D1" description="M_1" />
+<variable name="X2.6" id="1" domain="D1" description="M_1" />
+</variables>
+<predicates nbPredicates="0">
+</predicates>
+<constraints>
+<constraint name="C1" model="TKC" arity="2" scope="X2.1 X2.5" reference="R6" />
+<constraint name="C2" model="TKC" arity="2" scope="X2.1 X2.3" reference="R7" />
+<constraint name="C3" model="TKC" arity="2" scope="X2.2 X2.6" reference="R10" />
+<constraint name="C4" model="TKC" arity="2" scope="X2.2 X2.3" reference="R11" />
+<constraint name="C5" model="TKC" arity="2" scope="X2.3 X2.4" reference="R12" />
+<constraint name="C6" model="TKC" arity="2" scope="X2.4 X2.5" reference="R13" />
+</constraints>
+<agents_neighbours>
+<agents_parent>
+</agents_parent>
+<agents_children>
+<agent name = "A4">
+<constraints nbConstraints="2">
+<constraint model="TKC" name="C1" reference="R8" scope="X2.1 X4.4" arity="2">
+<parameters>X2.1 X4.4</parameters>
+</constraint>
+<constraint model="TKC" name="C2" reference="R9" scope="X2.2 X4.6" arity="2">
+<parameters>X2.2 X4.6</parameters>
+</constraint>
+</constraints>
+</agent>
+</agents_children>
+</agents_neighbours>
+<relations>
+<relation name="R6" semantics="conflicts">4 4|1 4|4 5|5 2|5 1</relation>
+<relation name="R7" semantics="conflicts">4 4|1 2|1 4|2 1|5 1</relation>
+<relation name="R10" semantics="conflicts">1 4|3 5|5 4|4 3|2 4</relation>
+<relation name="R11" semantics="conflicts">2 3|4 4|4 1|1 2|4 2</relation>
+<relation name="R12" semantics="conflicts">5 1|5 5|4 3|2 1|2 4</relation>
+<relation name="R13" semantics="conflicts">5 2|3 2|5 3|5 1|4 4</relation>
+<relation name="R8" semantics="conflicts">3 1|2 3|1 2|5 4|2 1</relation>
+<relation name="R9" semantics="conflicts">5 2|3 2|5 1|5 4|3 4</relation>
+</relations>
+</instance>

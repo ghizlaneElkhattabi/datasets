@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<instance>
+<presentation name="MSP" type="DisCSP" model="Complex" constraintModel="TKC" format="XDisCSP 1.0" />
+<domains nbDomains="1">
+<domain name="D1" nbValues="5">1..5</domain>
+</domains>
+<variables nbVariables="6">
+<variable name="X4.1" id="1" domain="D1" description="M_1" />
+<variable name="X4.2" id="1" domain="D1" description="M_1" />
+<variable name="X4.3" id="1" domain="D1" description="M_1" />
+<variable name="X4.4" id="1" domain="D1" description="M_1" />
+<variable name="X4.5" id="1" domain="D1" description="M_1" />
+<variable name="X4.6" id="1" domain="D1" description="M_1" />
+</variables>
+<predicates nbPredicates="0">
+</predicates>
+<constraints>
+<constraint name="C1" model="TKC" arity="2" scope="X4.4 X4.6" reference="R7" />
+</constraints>
+<agents_neighbours>
+<agents_parent>
+<agent name = "A3">
+<constraints nbConstraints="2">
+<constraint model="TKC" name="C1" reference="R4" scope="X3.2 X4.6" arity="2">
+<parameters>X3.2 X4.6</parameters>
+</constraint>
+<constraint model="TKC" name="C2" reference="R6" scope="X3.6 X4.2" arity="2">
+<parameters>X3.6 X4.2</parameters>
+</constraint>
+</constraints>
+</agent>
+</agents_parent>
+<agents_children>
+</agents_children>
+</agents_neighbours>
+<relations>
+<relation name="R7" semantics="conflicts">3 4|1 5|2 3|4 4|3 2</relation>
+<relation name="R4" semantics="conflicts">4 5|1 5|2 2|3 2|3 5</relation>
+<relation name="R6" semantics="conflicts">4 1|2 1|4 4|3 1|4 3</relation>
+</relations>
+</instance>
